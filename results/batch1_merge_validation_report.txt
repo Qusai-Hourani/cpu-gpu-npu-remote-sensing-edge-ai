@@ -1,0 +1,31 @@
+BATCH-1 CPU/GPU/NPU MERGE VALIDATION REPORT
+======================================================================
+Project root: C:\Users\qusai\ai_project
+CPU CSV: results\cpu_benchmark_results_batch1_3datasets.csv
+GPU CSV: results\gpu_benchmark_results_batch1_3datasets.csv
+NPU CSV: results\npu_benchmark_results_batch1_3datasets.csv
+[CPU] rows: 36
+[GPU] rows: 36
+[NPU] rows: 36
+[NPU] status check: all PASS
+Max |CPU-GPU accuracy diff|: 0.100000 percentage points
+Max |NPU-GPU accuracy diff|: 0.100000 percentage points
+Fastest accelerator counts overall:
+  GPU: 7
+  NPU: 29
+Fastest accelerator counts by dataset:
+  EuroSAT: CPU=0, GPU=2, NPU=10
+  AID: CPU=0, GPU=3, NPU=9
+  RESISC45: CPU=0, GPU=2, NPU=10
+
+Dataset-level official Table II values:
+  EuroSAT: CPU Acc=98.1914, GPU Acc=98.1944, NPU Acc=98.2037; CPU Lat=12.398404, GPU Lat=6.226752, NPU Lat=3.635462; mean model-ratio GPU/CPU=2.156440, NPU/CPU=4.542860, NPU/GPU=0.680508; ratios from mean latencies GPU/CPU=1.991151, NPU/CPU=3.410407, NPU/GPU=0.583846; NPU faster than GPU=10/12
+  AID: CPU Acc=95.8333, GPU Acc=95.8250, NPU Acc=95.8083; CPU Lat=12.436594, GPU Lat=6.421457, NPU Lat=4.460730; mean model-ratio GPU/CPU=2.035587, NPU/CPU=3.098481, NPU/GPU=0.832532; ratios from mean latencies GPU/CPU=1.936725, NPU/CPU=2.788018, NPU/GPU=0.694660; NPU faster than GPU=9/12
+  RESISC45: CPU Acc=94.8942, GPU Acc=94.8810, NPU Acc=94.8757; CPU Lat=11.889702, GPU Lat=6.267117, NPU Lat=3.623484; mean model-ratio GPU/CPU=2.038833, NPU/CPU=4.436303, NPU/GPU=0.660939; ratios from mean latencies GPU/CPU=1.897157, NPU/CPU=3.281290, NPU/GPU=0.578174; NPU faster than GPU=10/12
+
+Output files:
+  results\final_cpu_gpu_npu_batch1_comparison_3datasets.csv
+  results\table2_dataset_summary_batch1.csv
+  results\table2_dataset_summary_batch1.md
+  results\table3_best_fastest_batch1.csv
+  results\table3_best_fastest_batch1.md
