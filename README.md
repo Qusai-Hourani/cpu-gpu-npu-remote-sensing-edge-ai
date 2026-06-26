@@ -165,8 +165,21 @@ table3_best_fastest_batch1.md
 batch1_merge_validation_report.txt
 ```
 
+## Trained Models and ONNX Files
+
+Trained PyTorch checkpoints and ONNX model files are available as GitHub Release assets:
+
+[Download trained model checkpoints and ONNX files](https://github.com/Qusai-Hourani/cpu-gpu-npu-remote-sensing-edge-ai/releases/tag/v1.0-models)
+
+The release contains:
+
+- `trained_pytorch_checkpoints_converged_3datasets.zip`
+- `onnx_models_converged_3datasets.zip`
+
+These files are provided separately from the main repository to avoid bloating the source-code history.
+
 ## Notes on Large Files
 
-Large datasets, trained `.pth` checkpoints, ONNX model files, and virtual environment folders are not included in this repository due to size constraints.
+Large datasets and Python virtual environment folders are not included in this repository due to size constraints.
 
-The repository is intended to provide the scripts, final result tables, and figures needed to support the paper and reproduce the analysis workflow.
+The repository provides the source code, evaluation scripts, trained model release assets, result tables, figures, and environment files needed to support the paper and reproduce the analysis workflow.
